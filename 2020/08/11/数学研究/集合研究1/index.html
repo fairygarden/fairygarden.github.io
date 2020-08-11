@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/math.jpg">
 <meta property="article:published_time" content="2020-08-11T04:11:12.000Z">
-<meta property="article:modified_time" content="2020-08-11T06:54:46.592Z">
+<meta property="article:modified_time" content="2020-08-11T06:58:14.512Z">
 <meta property="article:author" content="cyc">
 <meta property="article:tag" content="数学">
 <meta property="article:tag" content="集合">
@@ -168,8 +168,8 @@
 <a id="more"></a>
 <p>我们用$card(A)$表示集合A内的所有元素。这样，我们开始从集合内元素的角度研究集合间的关系。<br><strong>首先是两个集合相并的情况</strong>，$A\cup B$<br><img src="/images/mat/%E9%9B%86%E5%90%88.png" alt=""><br>通过观察，我们可以得到：<br>$$card(A\cup B) = card(A) + card(B) - card(A\cap B)$$</p>
 <p>我们可以这样理解：在进行$card(A) + card(B)$运算时，$A$和$B$共同的元素被加了两次（即文氏图中重叠的部分），所以我们要减去它。<br>另一种理解是，我们将图中$A\cup B$分成两部分：整个集合$B$和一部分集合$A$（即图中红色月牙形）。这个月牙可以表示为$A$减去与$B$重合的部分，即$card(A) - card(A\cap B)$。</p>
-<p><strong>接下来是三个集合相并的情况</strong>，$A\cup B\cup C$<br><img src="/images/mat/%E9%9B%86%E5%90%882.png" alt=""><br>通过观察，我们可以得到：<br>$$card(A\cup B\cup C) = card(A) + card(B) + card(C) - card(A\cap B) - card(A\cap C) - card(C\cap B) + card(A\cap C\cap C)$$<br>对于这个公式的解释，我们首先使用代数方法。<br>记集合$A$中不与其他集合相交的部分为$t(A)$,其他集合同理。$card(A\cap B) = P,card(A\cap C) = Q,card(B\cap C) = M,card(A\cap C\cap C) = N$</p>
-<p>则有:<br>$$<br>card(A) &amp;= t(A) + P + Q - N (1)\\<br>card(B) &amp;= t(B) + P + M - N (2)\\<br>card(C) &amp;= t(C) + Q + M - N (3)\\<br>∴card(A) + card(B) + card(C) = 2P + 2M + 2Q - 3N\\<br>card(A\cup B\cup C) = t(A) + t(B) + t(C) + P + M - N + Q - N\\<br>=t(A) + t(B) + t(C) + P + M + Q -2N\\<br>∴card(A\cup B\cup C) = card(A) + card(B) + card(C) + N\\<br>即：card(A\cup B\cup C) = card(A) + card(B) + card(C) + card(A\cap C\cap C)\\<br>Q.E.D\\<br>$$</p>
+<p><strong>接下来是三个集合相并的情况</strong>，$A\cup B\cup C$<br><img src="/images/mat/%E9%9B%86%E5%90%882.png" alt=""><br>通过观察，我们可以得到：<br>$$card(A\cup B\cup C) = card(A) + card(B) + card(C) - card(A\cap B) - card(A\cap C) - card(C\cap B) + card(A\cap C\cap C)$$<br>对于这个公式的解释，我们首先使用代数方法。<br>记集合$A$中不与其他集合相交的部分为$t(A)$,其他集合同理。<br>$card(A\cap B) = P,card(A\cap C) = Q,card(B\cap C) = M,card(A\cap C\cap C) = N$</p>
+<p>则有:<br>$$<br>card(A) &amp;= t(A) + P + Q - N (1)\<br>card(B) &amp;= t(B) + P + M - N (2)\<br>card(C) &amp;= t(C) + Q + M - N (3)\<br>∴card(A) + card(B) + card(C) = 2P + 2M + 2Q - 3N\<br>card(A\cup B\cup C) = t(A) + t(B) + t(C) + P + M - N + Q - N\<br>=t(A) + t(B) + t(C) + P + M + Q -2N\<br>∴card(A\cup B\cup C) = card(A) + card(B) + card(C) + N\<br>即：card(A\cup B\cup C) = card(A) + card(B) + card(C) + card(A\cap C\cap C)\<br>Q.E.D\<br>$$</p>
 
         </div>
         
